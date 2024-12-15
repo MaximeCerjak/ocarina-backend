@@ -38,7 +38,7 @@ router.post('/', async (req, res) => {
     res.json({message: gptMessage});
   } catch (err) {
     console.error(err);
-    res.status(500).json({error: 'Erreur appel API OpenAI'});
+    res.status(500).json({error: 'Erreur appel API OpenAI', details: err});
   }
 });
 
