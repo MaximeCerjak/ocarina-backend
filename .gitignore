@@ -1,0 +1,3 @@
+# express app gitignore
+node_modules
+.env
